@@ -35,7 +35,7 @@ jobs:
       - name: Test with pytest
         run: |
           cd examples/tutorial
-          pytest    
+          pytest
   # Build Docker image in a separate job so that it's not tainted by cached build/test files
    build-image:
     # Only build image for PRs and merge to main
